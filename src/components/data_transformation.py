@@ -31,13 +31,15 @@ class DataTransformation:
                 ]
             )
 
+            
             cat_pipeline = Pipeline(
-                steps=[
-                    ("imputer", SimpleImputer(strategy="most_frequent")),
-                    ("one_hot_encoder", OneHotEncoder()),
-                    ("scaler", StandardScaler())
+                    steps=[
+                        ("imputer", SimpleImputer(strategy="most_frequent")),
+                        ("one_hot_encoder", OneHotEncoder(sparse_output=False)),  # If you prefer dense matrices
+                        ("scaler", StandardScaler(with_mean=False))  # Set with_mean=False for sparse data
                 ]
             )
+
 
             logging.info(f"Categorical columns: {categorical_columns}")
             logging.info(f"Numerical columns: {numerical_columns}")
