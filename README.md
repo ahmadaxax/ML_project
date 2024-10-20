@@ -50,6 +50,12 @@ Custom exceptions are defined in exception.py to provide meaningful error messag
 Contributions are welcome! Please feel free to open an issue or submit a pull request.
 
 ## Acknowledgements
-scikit-learn for machine learning algorithms and tools.
-Pandas for data manipulation and analysis.
-NumPy for numerical computations.
+scikit-learn for machine learning algorithms and tools.<br> 
+Pandas for data manipulation and analysis.<br> 
+NumPy for numerical computations.<br> 
+Seaborn for statistical data visualization.<br> 
+Matplotlib for creating static, animated, and interactive visualizations.<br> 
+CatBoost for gradient boosting on categorical features.<br> 
+XGBoost for optimized gradient boosting framework.<br> 
+Flask for building the web application.<br> 
+Dill for object serialization.<br> 
